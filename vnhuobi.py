@@ -713,9 +713,6 @@ class DataApi(object):
     def onTradeDetail(self, data):
         """成交细节推送"""
         print data
-        print (data["tick"]["data"]["amount"],
-               data["tick"]["data"]["direction"] + "-limit",
-               data["tick"]["data"]["price"])
 
     # ----------------------------------------------------------------------
     def onMarketDetail(self, data):
